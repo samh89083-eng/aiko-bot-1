@@ -1,0 +1,7 @@
+aiogram==3.4.1
+openai
+python-dotenv
+flask
+psycopg2-binary
+apscheduler
+pytz
