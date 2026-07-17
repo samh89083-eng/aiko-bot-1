@@ -47,7 +47,7 @@ def generate_reply(user_id, user_message):
         messages.append({"role": "user", "content": user_message})
         
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="qwen/qwen3.6-27b",
             messages=messages,
             max_tokens=280,
             temperature=0.75,
@@ -75,7 +75,7 @@ def generate_knock_message(user_id):
             "content": "[The user hasn't messaged in a while. Send ONE short, warm, slightly affectionate message as Aiko. Stay in character. 1 sentence max.]"
         })
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="qwen/qwen3.6-27b",
             messages=messages,
             max_tokens=80,
             temperature=0.8,
