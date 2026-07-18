@@ -19,9 +19,9 @@ def detect_image_request(text: str):
     # ================== CLEAN SFW KEYWORD MAP ==================
     keyword_map = {
         "selfie": "selfie",
-        "selfie extra": "selfie extra",
-        "hot photo": "selfie extra",
-        "exclussive photo": "selfie extra",
+        "selfie extra": "selfie_extra",
+        "hot photo": "selfie_extra",
+        "exclussive photo": "selfie_extra",
         "photo": "selfie",
         "picture": "selfie",
         "画像": "selfie",
