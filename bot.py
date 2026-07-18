@@ -165,7 +165,7 @@ async def handle_message(message: types.Message):
                 # Check if user wants selfie
                 text_lower = text.lower()
                 if any(word in text_lower for word in ["yes", "sure", "ok", "please", "はい", "うん", "いいよ", "送って", "selfie", "photo", "picture"]):
-                    img = get_random_image("selfie extra") or get_random_image("cute")
+                    img = get_random_image("selfie_extra") or get_random_image("cute")
                     if img:
                         await bot.send_photo(message.chat.id, img)
 
